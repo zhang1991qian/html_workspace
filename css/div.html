@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .box {
+            width: 100px;
+            height: 100px;
+        }
+        .font12 {
+            font-size: 12px;
+        }
+        .red {
+            background-color: red;
+        }
+        .green {
+            background-color: green;
+        }
+        /**
+        样式是#号调用，结构id 调用，只能调用一次，别的标签切勿调用，经常和js配合使用
+         */
+        #pink {
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="box red font12">111</div>
+    <div class="box green font12">222</div>
+    <div class="box red font12">333</div>
+    <div id="pink">我是刘德华</div>
+</body>
+</html>

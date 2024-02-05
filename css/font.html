@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>font</title>
+  <style type="text/css">
+    /**
+   (1) font-family 空号隔开，名字多个文字 用''，尽量用系统自带的字体
+   (2) font-weight 700-bolder 400-normal ，实际开发更提倡用数字（100～900之间）加粗
+   （3）font-style 斜体/非斜体 normal、italic（斜体） 让倾斜的字、不倾斜
+   （4）复合属性  简单简写 div {
+      font: italic 700 12px 'Microsoft Sans Serif' ;
+    }
+    font-size 和 font-family 不可以缺少
+     */
+    body {
+      font-family: 'Microsoft Sans Serif', Arial, Helvetica, SansSerif;
+      font-size: 16px;
+    }
+    /**
+    标题标签比较特殊, 需要单独指定大小
+     */
+    h2 {
+      font-size: 20px;
+    }
+    .bold {
+      font-weight: 200;
+    }
+
+    .italic {
+      font-style: italic;
+    }
+    em {
+      font-style: normal;
+    }
+    div {
+      font: italic 700 12px 'Microsoft Sans Serif' ;
+    }
+
+  </style>
+</head>
+<body>
+<h2>pink 的秘密</h2>
+<p>定期观察日：分为敲出观察日与敲入观察日。通常，每月一次进行敲出观察，每个交易日进行一次敲入观察。</p>
+<p>在约定的日期，将标的当日的收盘价格与敲出价格及敲入价格进行对比，以判断是否触发敲出事件或敲入事件。</p>
+<p>票息：触发敲出事件的情形下的年化收益率，或者从未触发敲入事</p>
+<p class="bold italic">件和敲出事件直至到期的情形下的年化收益率。</p>
+<p>不同条款的雪球产品因其市场风险不同，对应的票息也往往不同。</p>
+
+<p></p>
+<em>下课的你</em>
+
+<div>
+  三生三世，十里桃花
+</div>
+</body>
+</html>
