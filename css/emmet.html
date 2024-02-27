@@ -57,3 +57,33 @@
 </body>
 
 </html>
+
+
+INSERT INTO
+`gateway_secret` (
+`account_id`,
+`gateway`,
+`banned`,
+`banned_message`,
+`description`,
+`sub_merchant_id`,
+`merchant_id`,
+`secret_data`,
+`via_platform`,
+`created_at`,
+`updated_at`
+)
+VALUES
+(
+'acct_yHyzb9',
+'yoomoney',
+0,
+NULL,
+'Wondershare 正式账户 shopID:257007 子商户 2137331',
+'2137331',
+'257007',
+'{\"merchant_id\":\"2137331\",\"merchant_secret\":\"\",\"secret_key\":\"AAEACHvkABlbjAAAAYuscS-2PXLRv39j6Hx_qQCLOWNF4PeqERwk_c7wJJsTy5hShBqUkhb_dDizYZqYIAtsMD7N\",\"public_key\":\"\",\"webhook_secret\":\"\",\"environment\":\"production\"}',
+1,
+Now(),
+Now()
+)
