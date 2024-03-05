@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h3> 汽车信息如下: </h3>
+    <div id="demo">
+    </div>
+</body>
+<script type="javascript">
+    class Car {
+        constructor(name, year) {
+            this.name = name;
+            this.year = year;
+        }
+        age() {
+            let date = new Date();
+            return date.getFullYear() - this.year;
+        }
+    }
+
+    let myCar = new Car('Ford', 2014);
+    document.getElementById('demo').innerHTML = "My car is " + myCar.age() + 'years old.';
+</script>
+</html>

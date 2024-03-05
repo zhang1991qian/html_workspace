@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>Alphadash</title>
+</head>
+<body>
+<form id="demo-form" data-parsley-validate="">
+    <label>Please enter a alphadash:</label>
+    <input type="text" name="slug" required data-parsley-alphadash="">
+
+    <input type="submit">
+</form>
+
+<script src='./static/js/jquery/jquery-latest.min.js'></script>
+<script src='./static/js/parsley2.js'></script>
+<script type="text/javascript">
+    $( window ).on( 'load', function () {
+        $( '[data-validate="parsley"]' ).each( function () {
+            $( this ).parsley();
+        } );
+    } );
+    window.Parsley.addValidator('alphadash', {
+        validateString: function(value) {
+            console.log('validateString:', (/^\d+$/.test(value)))
+            return true == (/^\d+$/.test(value));
+        },
+        messages: {
+            en: 'Only alphabetic letters, dashes and underscores allowed.'
+        }
+    });
+</script>
+</body>
+</html>
